@@ -90,7 +90,7 @@ export class NourVoiceService {
 
   async preprocessText(text: string, options: { dialect: string, field: string, personality: string, controls: any }): Promise<string> {
     const prompt = `
-Vous êtes l'ingénieur du son principal de "Nour Voice - Professional Voice Engine". 
+Vous êtes l'ingénieur du son principal de "NOUR VOICE - Professional Voice Engine". 
 Votre tâche est de raffiner le texte suivant pour une production vocale professionnelle.
 
 Paramètres :
@@ -119,7 +119,7 @@ Retournez uniquement le texte optimisé, sans commentaires.
 
   async generateVoiceOver(text: string, voiceName: string, performanceNote: string): Promise<string> {
     const studioDirective = `
-Directives Nour Voice Studio :
+Directives NOUR VOICE :
 Générez une performance vocale de haute qualité basée sur ces spécifications :
 
 ${performanceNote}
@@ -164,4 +164,4 @@ Texte à enregistrer :
   }
 }
 
-export const nourishService = new NourVoiceService();
+export const nourService = new NourVoiceService();
